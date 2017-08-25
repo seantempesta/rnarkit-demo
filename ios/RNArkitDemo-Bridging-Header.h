@@ -1,5 +1,5 @@
 //
-//  RNMyText.h
+//  RNArkitDemo-Bridging-Header.h
 //  RNArkitDemo
 //
 //  Created by Sean Tempesta on 8/25/17.
@@ -8,6 +8,8 @@
 
 #import <React/RCTViewManager.h>
 
-@interface RNMyText : RCTViewManager
+#ifndef RNArkitDemo_Bridging_Header_h
+#define RNArkitDemo_Bridging_Header_h
 
-@end
+
+#endif /* RNArkitDemo_Bridging_Header_h */

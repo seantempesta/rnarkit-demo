@@ -13,7 +13,12 @@
                       :propTypes (merge {:text (.-string PropTypes)}
                                         (js->clj (.-propTypes (.-View ReactNative))))}))
 
-(def MyText (requireNativeComponent "RNMyText", myText))
+
+
+;(def MyText (requireNativeComponent "RNMyText", myText))
+
+(def CustomView (requireNativeComponent "CustomView", nil))
+
 ;
 ;// requireNativeComponent automatically resolves this to "RNTMapManager"
 ;module.exports = requireNativeComponent('RNTMap', null);)
@@ -42,10 +47,11 @@
                      :margin         40
                      :align-items    "center"}}
 
-       [:> MyText {:text  "Hello World"
-                   :style {:backgroundColor "transparent"
-                           :width           100
-                           :height          30}}]])))
+       [:> CustomView {:style {:backgroundColor "transparent"
+                               :width           100
+                               :height          30}}]
+
+       ])))
 
 
 ;
